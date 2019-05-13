@@ -134,6 +134,9 @@
 			width: 100%;
 			margin: 0;
 			padding: 0;
+			background-image: -webkit-gradient(linear, left top, right bottom, color-stop(12%, #fff), to(#64cefd));
+			background-image: -webkit-linear-gradient(left top, #fff 12%, #64cefd 100%);
+			background-image: -o-linear-gradient(left top, #fff 12%, #64cefd 100%);
 			background-image: linear-gradient(to right bottom, #fff 12%, #64cefd 100%);
 			-ms-text-size-adjust: 100%;
 			-moz-text-size-adjust: 100%;
@@ -163,6 +166,9 @@
 		.header {
 			display: table-row;
 			width: 100%;
+			background-image: -webkit-gradient(linear, left top, right bottom, from(#eeba00), to(#da5315));
+			background-image: -webkit-linear-gradient(left top, #eeba00, #da5315);
+			background-image: -o-linear-gradient(left top, #eeba00, #da5315);
 			background-image: linear-gradient(to right bottom, #eeba00, #da5315);
 		}
 
@@ -243,6 +249,7 @@
 			display: table;
 			height: 100%;
 			width: 100%;
+			-webkit-filter: blur(4px);
 			filter: blur(4px);
 		}
 
@@ -318,6 +325,8 @@
 			position: absolute;
 			left: 0;
 			top: 50%;
+			-webkit-transform: translate(-20%, -50%);
+			-ms-transform: translate(-20%, -50%);
 			transform: translate(-20%, -50%);
 			display: block;
 			width: 150px;
@@ -351,6 +360,8 @@
 
 		@media screen and (max-height: 600px) {
 			.temperature-wrapper .temperature::after {
+				-webkit-transform: translate(-10%, -50%);
+				-ms-transform: translate(-10%, -50%);
 				transform: translate(-10%, -50%);
 				width: 100px;
 				height: 100px;
@@ -383,6 +394,8 @@
 
 		@media screen and (max-height: 240px) {
 			.temperature-wrapper .temperature::after {
+				-webkit-transform: translate(10%, -50%);
+				-ms-transform: translate(10%, -50%);
 				transform: translate(10%, -50%);
 				width: 70px;
 				height: 70px;
@@ -398,6 +411,9 @@
 
 		.details-btn-wrapper .inner {
 			width: 100%;
+			background-image: -webkit-gradient(linear, left top, right bottom, from(#eeba00), to(#da5315));
+			background-image: -webkit-linear-gradient(left top, #eeba00, #da5315);
+			background-image: -o-linear-gradient(left top, #eeba00, #da5315);
 			background-image: linear-gradient(to right bottom, #eeba00, #da5315);
 		}
 
@@ -421,6 +437,9 @@
 		.details {
 			display: table-row;
 			width: 100%;
+			background-image: -webkit-gradient(linear, left top, right bottom, from(#eeba00), to(#da5315));
+			background-image: -webkit-linear-gradient(left top, #eeba00, #da5315);
+			background-image: -o-linear-gradient(left top, #eeba00, #da5315);
 			background-image: linear-gradient(to right bottom, #eeba00, #da5315);
 		}
 
