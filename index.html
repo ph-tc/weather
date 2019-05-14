@@ -273,16 +273,19 @@
 			vertical-align: middle;
 		}
 
-		.location-wrapper a {
+		.location-wrapper .city {
 			display: table-cell;
 			width: 100%;
+			vertical-align: middle;
+			text-align: right;
+		}
+
+		.location-wrapper .city a {
 			font-family: 'Exo 2', sans-serif;
 			font-size: 20px;
 			font-weight: bold;
 			color: #333;
-			text-align: right;
 			text-decoration: none;
-			vertical-align: middle;
 		}
 
 		@media screen and (max-height: 340px) {
@@ -652,7 +655,9 @@
 				<div class="location-btn-wrapper">
 					<button disabled></button>
 				</div>
-				<a href="#">Выбрать город</a>
+				<div class="city">
+					<a href="#">Выбрать город</a>
+				</div>
 			</div>
 		</div>
 		<div class="temperature-wrapper">
