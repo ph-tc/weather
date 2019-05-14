@@ -155,12 +155,6 @@
 			vertical-align: middle;
 		}
 
-		.clearfix::after {
-			content: '';
-			display: table;
-			clear: both;
-		}
-
 		/*HEADER*/
 
 		.header {
@@ -249,8 +243,6 @@
 			display: table;
 			height: 100%;
 			width: 100%;
-			-webkit-filter: blur(4px);
-			filter: blur(4px);
 		}
 
 		/*LOCATION*/
@@ -378,7 +370,7 @@
 			}
 		}
 
-		@media screen and (max-height: 300px) {
+		@media screen and (max-height: 530px) {
 			.temperature-wrapper .inner {
 				padding-top: 10px;
 			}
@@ -389,6 +381,12 @@
 
 			.temperature-wrapper .temperature {
 				margin-bottom: 0;
+			}
+		}
+
+		@media screen and (max-height: 370px) {
+			.temperature-wrapper {
+				display: none;
 			}
 		}
 
@@ -464,10 +462,6 @@
 			border-top: 1px solid #eee;
 		}
 
-		.details .week {
-			border-bottom: 1px solid #eee;
-		}
-
 		.details .week button,
 		.details .month button {
 			width: 100%;
@@ -486,14 +480,14 @@
 			background-repeat: no-repeat;
 		}
 
-		@media screen and (max-height: 540px) {
+		@media screen and (max-height: 660px) {
 			.details .week,
 			.details .month {
 				display: none;
 			}
 		}
 
-		@media screen and (max-height: 405px) {
+		@media screen and (max-height: 530px) {
 			.details-btn-wrapper {
 				display: table-row;
 			}
@@ -503,7 +497,7 @@
 			}
 		}
 
-		@media screen and (max-height: 340px) {
+		@media screen and (max-height: 370px) {
 			.details-btn-wrapper {
 				display: none;
 			}
@@ -593,8 +587,7 @@
 			font-size: 22px;
 			font-weight: normal;
 			line-height: 22px;
-			color: #aaa;
-			background-color: #000;
+			color: #333;
 		}
 
 		@media screen and (max-height: 240px) and (orientation: landscape) {
@@ -604,12 +597,6 @@
 				-webkit-transform: translate(0, -27px);
 				-ms-transform: translate(0, -27px);
 				transform: translate(0, -27px);
-			}
-		}
-
-		@media screen and (max-height: 410px) {
-			.main .btn-wrapper .heading {
-				display: none;
 			}
 		}
 
@@ -699,9 +686,6 @@
 				</table>
 				<div class="week">
 					<button disabled>Прогноз на неделю</button>
-				</div>
-				<div class="month">
-					<button disabled>Прогноз на месяц</button>
 				</div>
 			</div>
 		</div>
